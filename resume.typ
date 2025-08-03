@@ -1,16 +1,16 @@
 #import "@preview/clickworthy-resume:1.0.1": *
 
 // Personal Information
-#let name = "Jordan Michaels"
-#let email = "jordan.michaels@example.com"
-#let github = "github.com/jordan-devhub"
-#let linkedin = "linkedin.com/in/jordan-michaels"
+#let name = "Yassen Tambakti"
+#let email = "ytambakti@acm.org"
+#let github = "github.com/CollCaz"
+#let linkedin = "linkedin.com/in/yassentambakti"
 #let contacts = (
   [#link("mailto:" + email)[#email]],
   [#link("https://" + github)[#github]],
   [#link("https://" + linkedin)[#linkedin]],
 )
-#let location = ""
+#let location = "Tripoli, Libya"
 
 // Professional Summary
 #let summary = ""
@@ -43,64 +43,37 @@
 // Education
 = Education
 #edu(
-  institution: "Carnegie Mellon University",
-  date: "Sep 2023 - Jun 2025",
-  location: "Pittsburgh, PA",
+  institution: "University of Tripoli",
+  date: "2021 - Present",
+  location: "Tripoli, Libya",
   degrees: (
-    ("M.S.", "Computer Systems"),
+    ("B.S.", "Computer Science"),
   ),
-  gpa: "3.81",
-  extra: "",
-)
-
-#edu(
-  institution: "University of Texas at Austin",
-  date: "Aug 2018 - May 2023",
-  location: "Austin, TX",
-  degrees: (
-    ("B.S.", "Software Engineering"),
-    ("Minor", "Cognitive Science"),
-  ),
-  gpa: "3.97",
-  extra: "",
 )
 
 // Experience
 = Experience
 #exp(
-  title: "Platform Engineering Intern",
-  organization: "Bitstream Networks",
-  date: "May 2024 - Aug 2024",
-  location: "Denver, CO",
+  title: "Fullstack Developer",
+  organization: "Kevelop",
+  date: "April 2025 – Present",
   details: [
-    - Designed and deployed a real-time telemetry pipeline for edge network routers using Go and Protobuf.
-    - Developed high-throughput sync agents across distributed nodes using gRPC and Redis streams.
-    - Created Verilog modules to validate MAC-level packet timings on custom FPGA NICs for load testing.
+    - Took over an existing Next.js + PostgreSQL codebase, leading all backend and frontend development independently.
+    - Redesigned database schema and API routes; implemented new UI features from Figma designs.
+    - Collaborated with a designer while owning all engineering decisions with minimal oversight.
   ]
 )
 
 #exp(
-  title: "Firmware Intern",
-  organization: "Atlas Devices",
-  date: "Jun 2023 - Sep 2023",
-  location: "Boston, MA",
+  title: "Lead Backend Developer - Part Time",
+  organization: "University of Tripoli",
+  date: "January 2025 – Present",
   details: [
-    - Implemented drivers and diagnostics for a custom USB audio subsystem on a Cortex-M7 platform.
-    - Built Python automation scripts for multidevice firmware upgrade pipelines and JTAG verification.
-    - Validated board-level signal integrity with oscilloscope captures and SPI timing analyzers.
+    - Designed and implemented a scalable backend in Go for the university’s new website, currently in development.
+    - Made all major technical decisions, including API design, database modeling, and system architecture.
+    - Collaborated with a React frontend team while supervising junior developers and reviewing backend code.
+    - Coordinated with stakeholders to align backend functionality with institutional goals and timelines.
   ]
-)
-
-#exp(
-  title: "Undergraduate Lab Assistant",
-  organization: "University of Texas at Austin",
-  date: "Aug 2021 - Dec 2022",
-  location: "Austin, TX",
-  details: [
-    - Assisted with instructional support for algorithms, data structures, and discrete math courses.
-    - Led peer tutoring sessions and created practice exams for midterm review.
-  ],
-  hide: true
 )
 
 // Projects
@@ -131,40 +104,10 @@
 // Awards
 = Awards
 #exp(
-  title: "SpaceBot 2023 Finalist",
+  title: "Libyan collegiate programming contest 2024 finalist",
   details: [
-    - Received for the #link("https://github.com/jordan-devhub/lunar-nav-bot")[Lunar Navigation Bot] project among 200+ submissions.
+    - Won 5th place in the 2024 LCPC, and qualified for the 2024 Arab collegiate programming contest (ACPC).
   ]
-)
-
-// Publications
-// This template uses the `pub` function twice to display two publication entries.
-// The `pub-list` function is more advanced and could be used instead to display a list of publications from a `.bib` or `.yml` file.
-= Publications
-#pub(
-  authors: (
-    "Taylor Chen",
-    "Jordan Michaels",
-    "Emily Zhang",
-  ),
-  bold-author: "Jordan Michaels",
-  title: "Lightweight Neural Pruning for Speech Tasks on Low-Power Devices",
-  venue: "ACM UbiComp",
-  year: "2024",
-  doi-link: "doi.org/10.48550/arXiv.2404.00987",
-)
-
-#pub(
-  authors: (
-    "Jordan Michaels",
-    "Alice Smith",
-  ),
-  bold-author: "Jordan Michaels",
-  title: "Optimizing Edge AI Workflows for Low-Latency Inference",
-  venue: "IEEE Edge Computing",
-  year: "2023",
-  doi-link: "doi.org/10.1109/EDGECOMP.2023.1234567",
-  extra: "Best Paper Award",
 )
 
 // Skills
