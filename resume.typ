@@ -5,7 +5,9 @@
 #let email = "ytambakti@acm.org"
 #let github = "github.com/CollCaz"
 #let linkedin = "linkedin.com/in/yassentambakti"
+#let phone = "0945591846"
 #let contacts = (
+  [#link("https://wa.me/218" + phone)[#phone]],
   [#link("mailto:" + email)[#email]],
   [#link("https://" + github)[#github]],
   [#link("https://" + linkedin)[#linkedin]],
@@ -71,7 +73,7 @@
   details: [
     - Designed and implemented a scalable backend in Go for the university’s new website, currently in development.
     - Made all major technical decisions, including API design, database modeling, and system architecture.
-    - Collaborated with a React frontend team while supervising junior developers and reviewing backend code.
+    - Collaborated with a React frontend team while supervising junior developers and reviewing frontend code.
     - Coordinated with stakeholders to align backend functionality with institutional goals and timelines.
   ]
 )
@@ -79,26 +81,32 @@
 // Projects
 = Projects
 #exp(
-  title: link("https://github.com/jordan-devhub/lunar-nav-bot")[Lunar Navigation Bot (Autonomous Systems)],
+  title: link("https://github.com/CollCaz/Anubis")[Anubis (Automated Competitive Programming Judge)],
   details: [
-    - Simulated and field-tested a planetary rover using Jetson Nano, LiDAR, and YOLOv6 for rock classification.
-    - Used MQTT to coordinate movement commands with a relay station over intermittent mesh networks.
-    - Placed among top finalists in the #link("https://www.hackster.io/entries/space-bots-2023")[*SpaceBot 2023 Challenge*].
+    - Developed an automated competitive programming judge capable of evaluating code submissions in multiple languages.
+    - Implemented secure sandboxing techniques to safely execute untrusted user code and prevent system breaches.
+    - Integrated problem parsing, time and memory limit enforcement, and result reporting with detailed feedback.
+    - Designed with scalability in mind to handle concurrent submissions and real-time result updates.
+    - Open-sourced on GitHub, facilitating community contributions and continuous improvement.
   ]
 )
 
 #exp(
-  title: link("https://github.com/jordan-devhub/speechsync")[SpeechSync Streamer (Real-Time Communication)],
+  title: link("https://github.com/CollCaz/SimpleDigital")[SimpleDigital (Digital Circuits Simulator)],
   details: [
-    - Created a voice chat system with on-the-fly transcription and translation via Whisper + MarianMT.
+    - Developed a digital circuits simulator in C++ to model and analyze basic electronic components.
+    - Implemented features to simulate logic gates, flip-flops, and simple combinational circuits.
+    - Designed with a user-friendly interface using Raylib.
   ]
 )
 
 #exp(
-  title: link("https://github.com/jordan-devhub/audio-amp-kit")[Portable Audio Amplifier Kit (Hardware Design)],
+  title: link("https://github.com/CollCaz/FileShare")[FileShare (File Sharing Server)],
   details: [
-    - Designed a 7W audio amplifier with integrated thermal shutdown and overcurrent protection.
-  ],
+    - Developed a file hosting server in Go to facilitate secure and efficient file sharing within office environments.
+    - Integrated htmx for dynamic web interactions and Tailwind for responsive design.
+    - Implemented features like user authentication, file versioning, and access control to enhance collaboration.
+  ]
 )
 
 // Awards
@@ -114,38 +122,20 @@
 = Skills
 #skills((
   ("Expertise", (
-    [Edge Computing],
-    [Network Protocols],
-    [Robotics Systems],
-    [FPGA Toolchains],
-    [Embedded Audio],
-    [Multilingual NLP],
-    [System Monitoring],
-    [CI/CD Automation],
-  )),
-  ("Software", (
-    [PyTorch],
-    [TensorFlow Lite],
-    [OpenCV],
-    [KiCad],
-    [Docker],
-    [Kubernetes],
-    [Zephyr RTOS],
-    [Vivado],
-    [gRPC],
-    [Git],
-    [JIRA],
-    [WireShark],
-    [Linux],
+    [Linux & NixOS System Administration],
+    [Full-Stack Web Development],
+    [Backend Architecture & API Design],
+    [Automation & Scripting],
+    [UI/UX Collaboration],
+    [Data Collection & Processing],
   )),
   ("Languages", (
-    [Python],
+    [Go],
     [C/C++],
+    [Lua],
+    [TypeScript],
+    [Python],
     [Rust],
     [Bash],
-    [MATLAB],
-    [VHDL],
-    [Verilog],
-    [TypeScript],
   )),
 ))
